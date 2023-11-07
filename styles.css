@@ -2,7 +2,6 @@ body {
     background-image:url(otc.jpg);
     background-size: cover;
     background-attachment: fixed;
-    background-color: black;
 }
 
 h1 {
@@ -22,15 +21,16 @@ h1 {
     background-color: whitesmoke;
     padding: 30px;
     border-radius: 7px;
+    margin-bottom: 20px;
 }
 
-label {
+.labelforcontact {
     display: block;
     padding-bottom: 5px;
     position: relative;
 }
 
-input {
+.input1 {
     position: absolute;
     left: 15%;
     width: 75%;
@@ -42,3 +42,16 @@ input {
     position: initial;
 }
 
+.container2 {
+    margin: auto;
+    width: 80%;
+    background-color: whitesmoke;
+    padding: 30px;
+    border-radius: 7px;
+}
+
+textarea {
+    margin-top: 10px;
+    height: 100px;
+    width: 75%;
+}

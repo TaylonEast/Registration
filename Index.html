@@ -6,28 +6,81 @@
         <link rel="stylesheet" href="styles.css"/>
     </head>
 <body>
-    <h1>Advising Appointment</h1>
-    <div class="container">
+    <h1>Advising Appointment Form With Get Request</h1>
         <form method="get" action="thankyou.html">
+            <div class="container">
             <fieldset>
                 <legend>
                     Contact Information
                 </legend>
-                <label for="fname">
+                <label for="fname" class="labelforcontact">
                     First Name:
-                    <input autofocus type="text" id="fname" name="fname" required placeholder="First Name"/>
+                    <input autofocus type="text" id="fname" class="input1" name="fname" required placeholder="First Name"/>
                 </label>
-                <label for="lname">
+                <label for="lname" class="labelforcontact">
                     Last Name:
-                    <input type="text" id="lname" name="lname" required placeholder="Last Name"/>
+                    <input type="text" id="lname" class="input1" name="lname" required placeholder="Last Name"/>
                 </label>
-                <label for="email">
+                <label for="email" class="labelforcontact">
                     Email:
-                    <input type="email" id="email" name="email" required placeholder="Email"/>
+                    <input type="email" id="email" class="input1" name="email" required placeholder="Email"/>
                 </label>
             </fieldset>
-            <input type="submit" class="submit" value="Submit"/>
-        </form>
     </div>
+    <div class="container2">    
+            <fieldset>
+                <legend>
+                    Teacher
+                </legend>
+                <select name="Teacher Names" id="names">
+                    <option value="Tiffany Ford">Tifanny Ford</option>
+                    <option value="Kirsten Markley">Kirsten Markley</option>
+                    <option value="Jackson Lewis">Jackson Lewis</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Date and Preferred Option of Am/Pm For Appointment
+                </legend>
+                <select name="Month" id="month">
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+                <input name="Date" id="date" type="number" value="1" step="1" min="1" max="31" required/>
+                <label for="Am">Am</label>
+                <input name="AM/PM" id="Am" value="Am" type="radio"/>
+                <label for="Pm">Pm</label>
+                <input name="AM/PM" id="Pm" value="Pm" type="radio"/>
+            </fieldset>
+            <fieldset>
+                <legend>Classes You Want To Take Next Semsester</legend>
+                <label for="Java">Java</label>
+                    <input name="Java" id="Java" value="Java" type="radio"/>
+                <label for="C#">C#</label>
+                    <input name="C#" id="C#" value="C#" type="radio"/>
+                <label for="Web">Web Dev</label>
+                    <input name="Web" id="Web" value="Web" type="radio"/>
+                <label for="Database">Database</label>
+                    <input name="Database" id="Database" value="Database" type="radio"/>
+                <label for="SystemAnalysisAndDesign">System Analysis And Design</label>
+                    <input name="SystemAnalysisAndDesign" id="SystemAnalysisAndDesign" value="SystemAnalysisAndDesign" type="radio"/>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Info</legend>
+                    <textarea name="info" id="info"  placeholder="Any Additional Info!"></textarea>
+            </fieldset>
+            <input type="submit" class="submit" value="Submit"/>
+        </div>
+    </form>
 </body>
 </html>
