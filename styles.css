@@ -1,0 +1,44 @@
+body {
+    background-image:url(otc.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: black;
+}
+
+h1 {
+    margin: auto;
+    width: 80%;
+    background-color:whitesmoke;
+    padding: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+    background-color: whitesmoke;
+    padding: 30px;
+    border-radius: 7px;
+}
+
+label {
+    display: block;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+input {
+    position: absolute;
+    left: 15%;
+    width: 75%;
+}
+
+.submit {
+    margin-top: 5px;
+    width: initial;
+    position: initial;
+}
+
